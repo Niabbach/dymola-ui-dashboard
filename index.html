@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Dymola UI Lab</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Dymola UI Lab</h1>
+  <nav>
+    <button>Dashboard</button>
+    <button>Trends</button>
+    <button>Settings</button>
+  </nav>
+</header>
+
+<section class="controls">
+  <select id="signal-select"></select>
+  <input type="range" id="time-slider" min="0" max="0" value="0">
+  <span id="time-value">t = 0</span>
+</section>
+
+<main id="viewer">
+  <div class="card" id="signal-card"></div>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
